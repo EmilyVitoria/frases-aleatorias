@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frases Aleatórias da Internet™</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+    <main>
+        <h1>Frases Aleatórias da Internet™</h1>
+
+        <div id="frase" class="frase">"Confia no processo, mas faz o café primeiro."</div>
+
+        <div class="botoes">
+            <button onclick="novaFrase()">Nova Frase</button>
+            <button onclick="copiarFrase()">📋 Copiar</button>
+            <button onclick="salvarFavorita()">⭐ Salvar</button>
+            <button onclick="alternarTema()">🌓 Tema</button>
+        </div>
+
+        <p class="contador" id="contador">Frases geradas: 0</p>
+
+        <section class="favoritas" id="favoritas">
+            <h2>⭐ Favoritas</h2>
+            <ul id="listaFavoritas"></ul>
+        </section>
+
+        <p class="creditos">Feito por Emi, powered by caos, café e uns console.log existenciais ☕</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

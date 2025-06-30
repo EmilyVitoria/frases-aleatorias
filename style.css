@@ -1,0 +1,122 @@
+:root {
+    --bg-dark: #1e1e2f;
+    --text-dark: #f0f0f0;
+    --card-dark: #2a2a3e;
+
+    --bg-light: #f9f9f9;
+    --text-light: #222;
+    --card-light: #ffffff;
+
+    --accent: #00e676;
+    --accent-hover: #00c853;
+    --radius: 12px;
+}
+
+[data-theme="dark"] {
+    --bg: var(--bg-dark);
+    --text: var(--text-dark);
+    --card: var(--card-dark);
+}
+
+[data-theme="light"] {
+    --bg: var(--bg-light);
+    --text: var(--text-light);
+    --card: var(--card-light);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+    transition: all 0.3s ease;
+}
+
+main {
+    text-align: center;
+    background-color: var(--card);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: 0 0 20px #00000044;
+    max-width: 700px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+.frase {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: var(--accent);
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--accent-hover);
+}
+
+.contador {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.favoritas {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.favoritas h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--accent);
+}
+
+.favoritas ul {
+    list-style: none;
+    padding-left: 0;
+    font-style: italic;
+    color: var(--text);
+}
+
+.creditos {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #888;
+}
